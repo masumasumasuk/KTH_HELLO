@@ -8,7 +8,7 @@ public class Simple369 {
 	{
 		System.out.println("1 ~ 99 사이의 숫자를 입력하세요.");
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.next(); 								// 1~99 사이의 숫자 읽기
+		int n = scanner.nextInt(); 								// 1~99 사이의 숫자 읽기
 		
 		int Q = n/10; 											// 입력된 숫자의 십의자리수 (0~9)
 		int R = n%10;											// 입력된 숫자의 일의자리수 (0~9)
@@ -26,5 +26,7 @@ public class Simple369 {
 			System.out.println("NO 369");							
 		else														// 1~99 이외의 숫자일때
 			System.out.println("1~99사이의 숫자가 아닙니다.");
+		
+		scanner.close();
 	}
 }
