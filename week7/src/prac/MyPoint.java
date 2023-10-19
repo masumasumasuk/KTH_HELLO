@@ -1,10 +1,14 @@
 package prac;
 
 class MyPoint {
-	int x;
-	int y;
+	private int x, y;
 	
-	public void set(int x, int y) {
+	public MyPoint() {
+			this.x = 0;
+			this.y = 0;
+	}
+	
+	public MyPoint(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}

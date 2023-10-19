@@ -1,9 +1,12 @@
 package prac;
 
 class ColorPoint extends MyPoint {
-	String color;
+	private String color;
+	private int x;
+	private int y;
 	
-	public void setColor(String color) {
+	public ColorPoint(int x, int y, String color) {
+		super(x,y);
 		this.color = color;
 	}
 	
